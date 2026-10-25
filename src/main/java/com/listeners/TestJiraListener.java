@@ -30,9 +30,9 @@ public class TestJiraListener implements ITestListener {
 		if (isTicketReady) {
 			// raise jira ticket:
 			System.out.println("is ticket ready for JIRA: " + isTicketReady);
-			String pwdToken = "ATATT3xFfGF0IZz1tnff89sXRXfKAFFjYfDJLBMp6VKwcIKC_Q5jcrfqmKoD7ykOOGXWROkCC4BlwOvC9wYCBXnvEWZnoX9GQXgn7jHgTZ3rN1LVDv0Urez6fuwC7dEqBuCwDLquClSHWruaW2ethUv2Yr-tC0ABvBEizTjz2Cd7xCA1v8monDM=E3B9DA14"; 
+			String pwdToken = "ATATT3xFfGF0_z0BlJ05mpsirtZTRzBJXsVQbBnHE38-RpobjivTq9mppYq9EfopzwlVWUiyWdA_qcYoXzYxCyRUQZWvY1q57YiNmzoTxRob3b1amGrxHcOld7pSsCCl_9zIcPGkNzNFJRbVvgDEDvodkU47bu2D99CuHoz8ku7a5lDNXGgl6OY=2197C0CC"; 
 			JiraServiceProvider jiraSp = new JiraServiceProvider("https://sivakumarit4u.atlassian.net",
-					"sivakumarit4u@gmail.com", pwdToken, "MST");
+					"sivakumarit4u@gmail.com", pwdToken, "SCRUM");
 			String issueSummary = result.getMethod().getConstructorOrMethod().getMethod().getName()
 					+ "got failed due to some assertion or exception";
 			String issueDescription = result.getThrowable().getMessage() + "\n";
