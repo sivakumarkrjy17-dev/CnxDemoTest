@@ -20,7 +20,7 @@ public class LoginTest extends BaseTest{
 	@Test(priority=1, enabled=true)
 	public void verifyLoginPageTitleTest(){
 		String title = page.getInstance(LoginPage.class).getLoginPageTitle();
-		System.out.println(title);
+		System.out.println("Title of page" + title);
 		Assert.assertEquals(title, "HubSpot LoginXX");
 	}
 	
